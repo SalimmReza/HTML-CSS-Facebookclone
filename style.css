@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    box-sizing: border-box;
 
 }
 
@@ -23,11 +24,11 @@ nav{
 }
 
 .fb_text{
-  
-  
+
+
    margin-left: 10px;
    width: 160px;
-   
+
 }
 
 .navi_left, .navi_right{
@@ -50,7 +51,7 @@ nav{
     width: 40px;
     border-radius: 40%;
     cursor: pointer;
-    
+
 }
 
 .nav_user_icon{
@@ -106,27 +107,33 @@ nav{
 }
 
 .left_side_bar{
-    
-    flex-basis: 26%;
-    position: sticky;
-    top: 60px;
-    
-    align-self: flex-start;
-    
+
+  flex-basis: 26%;
+  position: sticky;
+  top: 60px;
+  align-self: flex-start;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  color: gray;
+
 }
 .right_side_bar{
-    
+
     flex-basis: 26%;
     position: sticky;
     top: 60px;
-    
     align-self: flex-start;
-    
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    color: gray;
+
 }
 
 .middle_content{
   flex-basis: 47%;
- 
+
 }
 
 .important_links a , .shortcut_links a{
@@ -151,7 +158,7 @@ nav{
 
 .important_links{
     border-bottom: 1px solid #292a2b;
-   
+
 }
 
 .shortcut_links p{
@@ -159,9 +166,83 @@ nav{
     font-size: 15px;
 }
 
+.side_bar_title{
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.side_bar_title h4{
+  font-size: 20px;
+  font-weight: bold;
+}
+.side_bar_title a{
+  font-size: 14px;
+  text-decoration: none;
+  color: blue
+}
 
 
-    
+.Events{
+  font-size: 15px;
+  display: flex;
+  margin-bottom: 20px;
+
+}
 
 
 
+.left_event{
+  height: 64px;
+  border-radius: 10px;
+  width: 64px;
+  margin-right: 14px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right_event a{
+  font-size: 12px;
+  color: blue;
+  text-decoration: none;
+}
+
+.left_event span{
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #0AC4F2;
+  color: white;
+  font-size: 11px;
+  padding: 4px 0;
+}
+
+.left_event h3{
+  margin-top: 10px;
+
+}
+.side_adds{
+  border-radius: 4px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.online_list{
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+
+}
+.online_list .online img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.online_list .online_name{
+  margin-left: 10px;
+}
