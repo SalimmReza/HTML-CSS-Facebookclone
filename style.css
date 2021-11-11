@@ -17,6 +17,9 @@ nav{
     justify-content: space-between;
     padding: 5px 5%;
     background: #0babd3;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
 }
 
 .fb_text{
@@ -77,6 +80,88 @@ nav{
     outline: transparent;
     border: 5px;
 }
+
+.online{
+    position: relative;
+}
+.online::after{
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid #fff ;
+    border-radius: 50%;
+    background: #41db51;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.Container{
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+
+
+}
+
+.left_side_bar{
+    
+    flex-basis: 26%;
+    position: sticky;
+    top: 60px;
+    
+    align-self: flex-start;
+    
+}
+.right_side_bar{
+    
+    flex-basis: 26%;
+    position: sticky;
+    top: 60px;
+    
+    align-self: flex-start;
+    
+}
+
+.middle_content{
+  flex-basis: 47%;
+ 
+}
+
+.important_links a , .shortcut_links a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: #696767;
+    width: fit-content;
+
+}
+
+.important_links img, .shortcut_links img {
+    margin-right: 14px;
+    width: 25px;
+}
+
+.important_links a:last-child{
+    margin-bottom: 20px;
+    color: #1137e4;
+}
+
+.important_links{
+    border-bottom: 1px solid #292a2b;
+   
+}
+
+.shortcut_links p{
+    margin: 20px;
+    font-size: 15px;
+}
+
+
+
+    
 
 
 
