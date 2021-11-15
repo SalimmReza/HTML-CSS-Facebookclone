@@ -173,8 +173,8 @@ nav{
   display: flex;
 }
 
-.side_bar_title h4{
-  font-size: 20px;
+.right_side_bar h4{
+  font-size: 18px;
   font-weight: bold;
 }
 .side_bar_title a{
@@ -245,4 +245,43 @@ nav{
 
 .online_list .online_name{
   margin-left: 10px;
+}
+
+.online_list .online::after{
+  top: unset;
+  bottom: 5px;
+}
+
+.story_galary{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.story{
+  padding-top: 32%;
+  flex-basis: 18%;
+  position: relative;
+  background-image:linear-gradient(transparent, rgba(0,0,0,0.5)), url(images/story1.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.story img{
+  position: absolute;
+  border-radius: 50%;
+  width: 35px;
+  top: 10px;
+  left: 10px;
+  border-radius: 5px solid #626262;
+}
+
+.story p{
+  bottom: 10px;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+
 }
