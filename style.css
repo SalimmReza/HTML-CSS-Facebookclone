@@ -6,8 +6,23 @@
 
 }
 
+
+:root{
+  --body-color:#ECF0F1;
+  --nav-color: #1876f2;
+  --bg-color:white;
+    
+}
+
+.dark_theme{
+  --body-color:#1f1e1e;
+  --nav-color: rgb(32, 31, 31);
+  --bg-color:rgb(36, 34, 34);
+}
+
 body{
-    background: #ECF0F1;
+    background: var(--body-color);
+    transition: background 0.0s;
 }
 
 
@@ -17,7 +32,7 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 5px 5%;
-    background: #0babd3;
+    background:var(--nav-color);
     position: sticky;
     top: 0%;
     z-index: 100;
@@ -61,6 +76,7 @@ nav{
 
 .search_box{
     width: 350px;
+    height: 35px;
     background: rgb(241, 245, 244);
     border-radius: 20px;
     display: flex;
@@ -101,18 +117,20 @@ nav{
 .Container{
     display: flex;
     justify-content: space-between;
-    padding: 13px 5%;
+    padding-top: 13px;
+    padding-left: 5px;
+    padding-right: 2%;
 
 
 }
 
 .left_side_bar{
 
-  flex-basis: 26%;
+  flex-basis:26%;
   position: sticky;
   top: 60px;
-  align-self: flex-start;
-  background: white;
+ align-self: flex-start;
+  background:var(--bg-color);
   padding: 20px;
   border-radius: 4px;
   color: gray;
@@ -124,7 +142,7 @@ nav{
     position: sticky;
     top: 60px;
     align-self: flex-start;
-    background: white;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: gray;
@@ -146,9 +164,15 @@ nav{
 
 }
 
-.important_links img, .shortcut_links img {
+.important_links img  {
     margin-right: 14px;
     width: 25px;
+}
+.shortcut_links img{
+  margin-right: 14px;
+  width: 25px;
+  background: rgb(238, 139, 58);
+  
 }
 
 .important_links a:last-child{
@@ -231,7 +255,7 @@ nav{
   border-radius: 4px;
   margin-bottom: 10px;
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 .online_list{
   align-items: center;
@@ -317,7 +341,7 @@ nav{
 }
 
 .write_post_container{
-background: white;
+background:var(--bg-color);
 width: 100%;
 border-radius: 5px;
 padding: 20px;
@@ -382,7 +406,7 @@ color: #080808;
 
 
 .post_container{
-  background: white;
+  background:var(--bg-color);
 width: 100%;
 border-radius: 5px;
 padding: 20px;
@@ -458,5 +482,108 @@ margin-top: 15px;
   color: #7e7979;
 }
 
+.load_more{
+  display: block;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solod #9a9a9a;
+  color: rgb(139, 136, 136);
+  background: transparent;
+  border-radius: 5px;
+
+}
+
+.footer{
+text-align: center;
+color: rgb(51, 48, 48);
+padding: 10px 10px 20px;
+font-size: 15px;
+}
+.setting-menu{
+  width:100%;
+  position: absolute;
+  max-width: 387px;
+
+  background:var(--bg-color);
+  box-shadow: 0 0 10px rgb(0, 0, 0 , 0.4);
+  border-radius: 4px;
+  overflow: hidden;
+  top: 62px;
+  right: 1.9%;
+  max-height:0;
+  transition: 1s;
+
+}
+
+.setting-menu-height{
+  max-height: 450px;
+}
+
+.user_profile a{
+color: dodgerblue;
+font-size: 13px;
+text-decoration: none;
+}
+
+.setting_menu_inner{
+  padding: 20px;
+}
+
+.setting_menu hr{
+  height: 1px;
+  background: #292a2b;
+  margin: 15px 0;
+  border: 0;
+}
+
+.setting_links{
+display: flex;
+align-items: center;
+margin: 15px 0;
+}
+
+.setting_links .setting_icon {
+ width: 38px;
+ margin-right: 10px;
+ border-radius: 50%;
+}
 
 
+.setting_links a{
+ display: flex;
+ flex:1;
+ align-items: center;
+ justify-content: space-between;
+ text-decoration: none;
+ color: #696767;
+}
+
+#dark_btn{
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ccc;
+  width: 45px;
+  border-radius: 15px;
+  padding: 2px 3px;
+  cursor: pointer;
+  transition  : padding-left 0.5s, background 0.6s;
+
+}
+
+#dark_btn span{
+  width: 18px;
+  height: 18px;
+  background: white;
+  border-radius: 51%;
+  display: inline-block;
+}
+
+ #dark_btn.dark_btn_on{
+  padding-left: 23px;
+  background: #292828;
+
+} 
